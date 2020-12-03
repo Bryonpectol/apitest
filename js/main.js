@@ -64,10 +64,10 @@ PhotoBoxes.forEach(SpacePhotos => {
 	MainContainer.appendChild(MainDiv);
 	MainDiv.appendChild(pee);
 	MainDiv.appendChild(Cap);
-	MainDiv.appendChild(popu);
-	MainDiv.appendChild(call);
 	MainDiv.appendChild(reg);
 	MainDiv.appendChild(subr);
+	MainDiv.appendChild(popu);
+	MainDiv.appendChild(call);
 	MainDiv.appendChild(cur);
 	MainDiv.appendChild(loc);
 	MainDiv.appendChild(time);

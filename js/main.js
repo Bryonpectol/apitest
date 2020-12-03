@@ -24,7 +24,7 @@ const PhotoBoxes = games.map(SpacePhotos => {
 
 
 PhotoBoxes.forEach(SpacePhotos => {
-	let pee = document.createElement("p");
+	let pee = document.createElement("h1");
 	let popu = document.createElement("p");
 	let call = document.createElement("p");
 	let reg = document.createElement("p");
@@ -44,7 +44,7 @@ PhotoBoxes.forEach(SpacePhotos => {
 	call.className = "peeno";
 	Cap.className = "peeno";
 	cur.className = "peeno";
-	loc.className = "peeno";
+	loc.className = "peenoa";
 	time.className = "peeno";
 
 	MainDiv.className = "MainDiv";
@@ -60,6 +60,7 @@ PhotoBoxes.forEach(SpacePhotos => {
 	time.innerHTML = "Timezone(s): " + SpacePhotos.Time;
 
 	loc.href="https://www.google.com/maps/place/" + SpacePhotos.Loc;
+	loc.setAttribute("target", "_blank")
 
 	MainContainer.appendChild(MainDiv);
 	MainDiv.appendChild(pee);
@@ -69,8 +70,8 @@ PhotoBoxes.forEach(SpacePhotos => {
 	MainDiv.appendChild(popu);
 	MainDiv.appendChild(call);
 	MainDiv.appendChild(cur);
-	MainDiv.appendChild(loc);
 	MainDiv.appendChild(time);
+	MainDiv.appendChild(loc);
 
 
     console.log(pee);

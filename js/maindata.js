@@ -414,17 +414,17 @@ export const games = [
             ],
             "alpha2Code": "AQ",
             "alpha3Code": "ATA",
-            "callingCodes": [],
-            "capital": "",
+            "callingCodes": ["N/A"],
+            "capital": "N/A",
             "altSpellings": [],
             "region": "Polar",
-            "subregion": "",
+            "subregion": "N/A",
             "population": 1000,
             "latlng": [
                 -74.65,
                 4.48
             ],
-            "demonym": "",
+            "demonym": "N/A",
             "area": 1.4E7,
             "gini": null,
             "timezones": [
@@ -437,7 +437,7 @@ export const games = [
                 "UTC+10:00",
                 "UTC+12:00"
             ],
-            "borders": [],
+            "borders": ["N/A"],
             "nativeName": "Antarctica",
             "numericCode": "010",
             "currencies": [

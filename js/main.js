@@ -14,6 +14,9 @@ const PhotoBoxes = games.map(SpacePhotos => {
 		Region: CatBox.region,
 		SubR: CatBox.subregion,
 		Cap: CatBox.capital,
+		Currencies: CatBox.currencies,
+		Loc: CatBox.latlng,
+		Time: CatBox.timezones,
         
     };
 
@@ -27,6 +30,10 @@ PhotoBoxes.forEach(SpacePhotos => {
 	let reg = document.createElement("p");
 	let subr = document.createElement("p");
 	let Cap = document.createElement("p");
+	let cur = document.createElement("p");
+	let loc = document.createElement("p");
+	let time = document.createElement("p");
+
 
 	let MainDiv = document.createElement("div");
 
@@ -36,6 +43,9 @@ PhotoBoxes.forEach(SpacePhotos => {
 	popu.className = "peeno";
 	call.className = "peeno";
 	Cap.className = "peeno";
+	cur.className = "peeno";
+	loc.className = "peeno";
+	time.className = "peeno";
 
 	MainDiv.className = "MainDiv";
 
@@ -45,6 +55,9 @@ PhotoBoxes.forEach(SpacePhotos => {
 	reg.innerHTML = "Region: " + SpacePhotos.Region;
 	subr.innerHTML = "Sub-Region: " + SpacePhotos.SubR;
 	Cap.innerHTML = "Capital: " + SpacePhotos.Cap;
+	cur.innerHTML = "Currencies: " + SpacePhotos.Currencies;
+	loc.innerHTML = "Lattitude , Longitude: " + SpacePhotos.Loc;
+	time.innerHTML = "Timezone(s): " + SpacePhotos.Time;
 
 	MainContainer.appendChild(MainDiv);
 	MainDiv.appendChild(pee);
@@ -53,6 +66,9 @@ PhotoBoxes.forEach(SpacePhotos => {
 	MainDiv.appendChild(call);
 	MainDiv.appendChild(reg);
 	MainDiv.appendChild(subr);
+	MainDiv.appendChild(cur);
+	MainDiv.appendChild(loc);
+	MainDiv.appendChild(time);
 
 
     console.log(pee);

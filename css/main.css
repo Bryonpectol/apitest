@@ -20,4 +20,8 @@
 .peeno {
     /* font-weight: bolder; */
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 20vh; */
 }

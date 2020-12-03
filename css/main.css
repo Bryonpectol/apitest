@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+/* Desktop */
+
+@media only screen and (min-width: 601px) {
+    
+
 nav {
     background-color: #008080;
     height: 10vh;
@@ -65,3 +70,73 @@ nav {
     background-color: #00ccff;
     color: black;
 }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    
+
+    nav {
+        background-color: #008080;
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+    }
+    
+    .phead {
+        padding-top: 15vh;
+        text-align: center;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .MainDiv {
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 2vh;
+        padding: 2vh;
+        width: 75vh;
+        background-color: #005555;
+    }
+    
+    .pee {
+        font-weight: bolder;
+        text-align: center;
+        color: white;
+    }
+    
+    .peeno {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2vh;
+        color: white;
+    }
+    
+    .peenoa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2vh;
+        text-decoration: none;
+        color: black;
+        border: solid 2px black;
+        padding: 1vh;
+        width: 35vh;
+        margin-left: 10.5%;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    .peenoa:hover {
+        background-color: #00ccff;
+        color: black;
+    }
+    }

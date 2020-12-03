@@ -31,7 +31,7 @@ PhotoBoxes.forEach(SpacePhotos => {
 	let subr = document.createElement("p");
 	let Cap = document.createElement("p");
 	let cur = document.createElement("p");
-	let loc = document.createElement("p");
+	let loc = document.createElement("a");
 	let time = document.createElement("p");
 
 
@@ -56,8 +56,10 @@ PhotoBoxes.forEach(SpacePhotos => {
 	subr.innerHTML = "Sub-Region: " + SpacePhotos.SubR;
 	Cap.innerHTML = "Capital: " + SpacePhotos.Cap;
 	cur.innerHTML = "Currencies: " + SpacePhotos.Currencies;
-	loc.innerHTML = "Lattitude , Longitude: " + SpacePhotos.Loc;
+	loc.innerHTML = "Google Maps Location";
 	time.innerHTML = "Timezone(s): " + SpacePhotos.Time;
+
+	loc.href="https://www.google.com/maps/place/" + SpacePhotos.Loc;
 
 	MainContainer.appendChild(MainDiv);
 	MainDiv.appendChild(pee);

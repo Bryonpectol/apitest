@@ -1,0 +1,23 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MainDiv {
+    border: 2px solid black;
+    margin: 2vh;
+    padding: 2vh;
+    width: 75vh;
+}
+
+.pee {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.peeno {
+    /* font-weight: bolder; */
+    text-align: center;
+}

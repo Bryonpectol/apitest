@@ -60,7 +60,11 @@ PhotoBoxes.forEach(SpacePhotos => {
 	time.innerHTML = "Timezone(s): " + SpacePhotos.Time;
 
 	loc.href="https://www.google.com/maps/place/" + SpacePhotos.Loc;
-	loc.setAttribute("target", "_blank")
+	loc.setAttribute("target", "_blank");
+
+	if (SpacePhotos.Time.length > 2) {
+		time.innerHTML = "Timezone(s): Multiple Time Zones"
+	}
 
 	MainContainer.appendChild(MainDiv);
 	MainDiv.appendChild(pee);

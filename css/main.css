@@ -20,6 +20,11 @@ nav {
     text-align: center;
 }
 
+.h3 {
+    text-align: center;
+    font-style: italic;
+}
+
 #container {
     display: flex;
     flex-direction: row;
@@ -86,6 +91,10 @@ nav {
     
     .phead {
         padding-top: 15vh;
+        text-align: center;
+    }
+
+    .h3 {
         text-align: center;
     }
     

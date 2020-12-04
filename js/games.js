@@ -1,28 +1,52 @@
-let MainContainer = document.getElementById("container");
-let p = document.createElement("a");
-let MainDiv = document.createElement("div");
+import { games } from "../js/gamesdata.js";
 
-let num = Math.floor(Math.random() * 15)
+const MainContainer = document.getElementById("container");
 
-if(num == 0) {
-    num === 1;
-}
+const PhotoBoxes = games.map(SpacePhotos => {
+    let CatBox = games.find(Cat => {
+        return Cat.first_name === SpacePhotos.first_name;
+    });
 
-fetch("https://genius.p.rapidapi.com/artists/" + num, {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "60933f7a25msh463c4213097c6f4p1cd76cjsn9f98d620d4ef",
-		"x-rapidapi-host": "genius.p.rapidapi.com"
-	}
-})
-.then(response => {
-    console.log(response);
+    return {
+		Name: CatBox.first_name,
+		mana: CatBox.last_name,
+		where: CatBox.team.full_name,
+        
+    };
 
-    p.textContent = response.json.arguments;
-    
-    MainContainer.appendChild(MainDiv);
-    MainDiv.appendChild(p);
-})
-.catch(err => {
-	console.error(err);
 });
+
+
+PhotoBoxes.forEach(SpacePhotos => {
+	let pee = document.createElement("h1");
+	
+	let img = document.createElement("img");
+	let Mana = document.createElement("p");
+	let where = document.createElement("p");
+
+	let MainDiv = document.createElement("div");
+
+	pee.className = "pee";
+	Mana.className = "peeno";
+	where.className = "peeno";
+	
+
+	MainDiv.className = "MainDiv";
+
+	pee.textContent = SpacePhotos.Name + " " + SpacePhotos.mana;
+	img.src = SpacePhotos.img
+	Mana.textContent = SpacePhotos.mana;
+	where.innerHTML = "Team: " + SpacePhotos.where;
+
+	
+
+	MainContainer.appendChild(MainDiv);
+	MainDiv.appendChild(pee);
+	// MainDiv.appendChild(img);
+	// MainDiv.appendChild(Mana);
+	MainDiv.appendChild(where);
+
+
+    console.log(pee);
+});
+
